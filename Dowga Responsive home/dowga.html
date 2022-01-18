@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dowga Ink Tattoo Studio</title>
+    <link rel="stylesheet" href="./css/dwcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="brand">DOWGA INK STUDIO</a>
+      <div class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>
+    <section class="section-main">
+        <h1 style="color:rgba(255, 0, 0, 0.753);">GETINKED&RIDEALONG</h1>
+    </section>
+
+    <section id="services" class="section-two">
+
+      <div id="services" class="wrapper">
+        <h2>OUR SERVICES</h2>
+
+        <div class="flex-container">
+
+          <div class="contact">
+            <img src="/img/JAN 2022 PROMO.png" width="400px">
+          </div>
+
+          <div class="contact">
+            <img src="/img/PIERCING PRICE.png" width="400px">
+          </div>
+
+          <div class="contact">
+            <img src="/img/BLACK FRIDAY PROMO 2.png" width="400px">
+          </div>
+  
+        </div>
+
+  </section>
+
+    
+
+
+    </section>
+    
+    <section id="contact-us" class="section-two" style="vertical-align: middle">
+
+        <h2>Contact Us</h2>
+
+        <div class="form">
+
+          <form name="form1" action="https://formsubmit.co/valentinoseleteng@gmail.com" method="POST">
+
+          <input type="text" name="name" placeholder="Full name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="message" name="message" placeholder="Write your message here" required>
+          <button type="submit" name="submit">Send</button>
+          </form>
+
+        </div>
+
+        
+
+
+    </section>
+
+    <script type="text/javascript">
+    //javascript for navigation bar effect on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+    </script>
+  </body>
+</html>
